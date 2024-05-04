@@ -13,7 +13,7 @@ interface ProducListProps {
   }>[];
 }
 
-const ProductList = async ({ products }: ProducListProps) => {
+const ProductList = ({ products }: ProducListProps) => {
   return (
     <div className="everflow-x-scroll flex gap-4 px-5 [&::-webkit-scrollbar]:hidden">
       {products.map((product) => (
