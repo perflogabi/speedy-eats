@@ -1,16 +1,7 @@
 import { notFound } from "next/navigation";
-
-import Image from "next/image";
 import { db } from "@/app/_lib/prisma";
-
-import { ArrowDownIcon } from "lucide-react";
-import {
-  calculateProductTotalPrice,
-  formatCurrency,
-} from "@/app/_helpers/price";
-import ProductImage from "./_components/product-image";
-import DiscountBadge from "@/app/_components/discount-badge";
 import ProductDetails from "./_components/product-details";
+import ProductImage from "./_components/product-image";
 
 interface ProductPageProps {
   params: {
